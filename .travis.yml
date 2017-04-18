@@ -4,4 +4,7 @@ notifications:
 compiler:
     - clang
     - gcc
-script: mkdir build && cd build && cmake ../
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y clang-format-3.8
+script: bash ./script/check_format.sh && mkdir build && cd build && cmake ../
