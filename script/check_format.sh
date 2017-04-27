@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script was originally inspired by:
 # https://github.com/root-project/root/blob/master/.travis.yml
 
